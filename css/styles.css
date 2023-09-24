@@ -1,0 +1,281 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+
+
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    
+
+   
+    
+
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family:"ApercuPro-Light",sans-serif !important ;
+    
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .navbar{
+   
+    font-size: 12px;
+  }
+
+  .user-cart{
+    width: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .carousel-item{
+    position: relative;
+  } 
+
+ 
+  .carousel-text>h5{
+    font-size: 2.5rem;
+    font-family: "GTSuperDisplay-Regular" !important;
+  }
+
+  .carousel-text>p{
+    font-size: 16px;
+    font-family: "GTSuperDisplay-Regular" !important;
+  }
+
+  .carousel-text{
+  
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+    text-align: center;
+   
+
+  }
+
+  .read-more{
+    font-size: 13px;
+  
+    letter-spacing: 1px;
+    font-weight:bold;
+    text-align: center;
+    border-radius: 2px;
+    background: #98a88d;
+    background: #000000;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+  }
+  .read-more:hover{
+    color: #face93;
+  }
+
+  .products{
+    margin: 22px;
+  }
+  .products>h5{
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .products>h2{
+    font-size: 32px;
+ text-align: center;
+ font-family: GTSuperDisplay-Regular!important;
+  }
+
+  .carousel-cell {
+    
+    
+    margin-right: 2px;
+   padding: 10px;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+    position: relative;
+  }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+   
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+  
+
+  .carousel-cell>h6{
+    font-family: ApercuPro-Bold,Source Sans Pro,Helvetica,sans-serif;
+    letter-spacing: 3px;
+    position: absolute;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+
+    bottom: 22px;
+  }
+
+
+  .flickity-page-dots {
+    display: none;
+  }
+
+  .show-more-btn{
+   
+        font-size: 13px;
+      
+        font-weight:bold;
+        text-align: center;
+        border-radius: 2px;
+        background: #face93;
+        
+        padding: 15px 35px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        border: none;
+        width: 150px;
+    
+  }
+  .show-more-btn:hover{
+    background: #000000;
+    color: white;
+  }
+  
+
+  .electrolytes-section{
+    
+    margin: 22px;
+
+
+  }
+
+  .product-details{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .product-details>h6{
+    font-family: ApercuPro-Bold,Source Sans Pro,Helvetica,sans-serif;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 12px;
+  }
+
+  .product-details>h2{
+    font-family: GTSuperDisplay-Regular!important;
+  }
+  .product-details>p{
+    font-size: 15px!important;
+    opacity: 0.5;
+  }
+
+
+  .product-image>img{
+    max-height: 730px;
+   
+  }
+
+
+  @media screen and (max-width: 768px) { /* Adjust the max-width to your desired breakpoint */
+    .product-details{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .productcontent-wrapper{
+        display: flex;
+
+        flex-direction: column-reverse;
+    }
+  }
+
+
+
+  .whey-section{
+    
+    margin: 22px;
+  }
+  
+
+  .plant-portein-section{
+    margin: 22px;
+  }
+
+  .product-details-plant{
+    background-color: #f2efec;
+    padding: 15% 15%;
+    justify-content: center;
+  }
+
+  .product-image{
+ display: flex;
+ justify-content: center;
+   margin: 0 auto;
+  }
+
+  .product-image>img{
+    width: 70%;
+    
+  }
+ 
+  .immunity-Boost-section{
+    margin: 22px;
+  }
+
+  .expert-team-section{
+    background-color:#f9f6ef;
+    margin: 22px;
+  }
+
+  .summary{
+    margin: 22px;
+  }
+
+  .nack-link{
+  text-decoration: none;
+  font-size: 13px;
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 1px;
+  }
+
+  .nack-link:hover{
+    color: #face93;
+  }
+
+  .footer{
+   
+    background-color: #000000;
+    padding: 10px;
+  }
+
+  .logo>img{
+    filter: invert(100%);
+  }
