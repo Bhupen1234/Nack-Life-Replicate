@@ -36,6 +36,8 @@ html {
     font-size: 12px;
   }
 
+ 
+
   .user-cart{
     width: 10vw;
     display: flex;
@@ -133,7 +135,7 @@ html {
     font-weight: bold;
     left: 50%;
     transform: translateX(-50%);
-
+  
     bottom: 22px;
   }
 
@@ -201,20 +203,7 @@ html {
   }
 
 
-  @media screen and (max-width: 768px) { /* Adjust the max-width to your desired breakpoint */
-    .product-details{
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-    }
-
-    .productcontent-wrapper{
-        display: flex;
-
-        flex-direction: column-reverse;
-    }
-  }
+  
 
 
 
@@ -270,12 +259,168 @@ html {
     color: #face93;
   }
 
-  .footer{
+  footer{
    
     background-color: #000000;
     padding: 10px;
   }
 
-  .logo>img{
+  .logos{
+    width: 38%;
+    display: flex;
+    padding: 20px;
+
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .logo-brand>img{
     filter: invert(100%);
+    cursor: pointer;
+  }
+
+
+  .social-platform-logos>img{
+    width: 20px;
+    height: 19px;
+    cursor: pointer;
+  }
+
+  .social-platform-logos{
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .footer-links>li{
+    text-decoration: underline;
+    list-style: none;
+    font-size: 1.4rem;
+    font-family: "ApercuPro-Light" !important;
+    color: white;
+    cursor: pointer;
+    
+  }
+
+  .footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    width: 32%;
+    align-items: center;
+    text-align: center;
+    
+    gap: 30px;
+    padding: 20px;
+  }
+  .contact-form{
+    color: white;
+    width: 32%;
+    
+  }
+
+  .contact-form>h5{
+    font-family: 'GTSuperDisplay-Regular';
+    font-size: 1.5rem;
+    
+   
+  }
+
+  #email-field{
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: ApercuPro-Light,Source Sans Pro,Helvetica,sans-serif;
+    background: transparent;
+    padding: 15px;
+    box-shadow: none;
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  .join-now-button{
+    background-color: #face93;
+    border: 1px solid #fff;
+    height: 50px;
+    color: #000;
+    font-family: ApercuPro-Bold,Source Sans Pro,Helvetica,sans-serif;
+    text-align: center;
+    width: 100%;
+  }
+
+  .copyright>h5{
+    text-align: center;
+    font-family: 'ApercuPro-Light';
+    color: #fff;
+    opacity: 0.6;
+  }
+  .copyright{
+    padding: 48px;
+  }
+
+
+  @media screen and (max-width: 768px) { /* Adjust the max-width to your desired breakpoint */
+    .product-details{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .productcontent-wrapper{
+        display: flex;
+
+        flex-direction: column-reverse;
+    }
+
+    .footer{
+      flex-direction: column;
+     align-items: center;
+    }
+    .logos{
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links{
+      gap: 10px;
+      width: 100%;
+      justify-content: center;
+     
+    }
+    .contact-form{
+      width: 100%;
+      text-align: center;
+    }
+    .carousel-item{
+      position: relative;
+    }
+
+    .carousel-text>h5{
+      
+      font-size: 1.5rem;
+      
+     
+    }
+  
+    .carousel-text>p{
+      font-size: 15px;
+      
+    }
+
+    .carousel-item>img{
+      height: 500px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    /* .carousel-text{
+      position: absolute !important;
+      top: 35px;
+    } */
+
+    
   }
